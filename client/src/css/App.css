@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: "roboto";
 }
 body::-webkit-scrollbar{
     
@@ -8,3 +9,4 @@ body::-webkit-scrollbar{
     display: none;
 
 }
+

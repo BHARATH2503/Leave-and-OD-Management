@@ -27,7 +27,7 @@ const Login = () => {
           <h3 className="Auth-form-title">Admin Login</h3>
           <div className="Auth-form-content">
             {error && <Alert variant="danger">{error}</Alert>}
-            <Form.Label  className="mb-1">Email</Form.Label>
+            <Form.Label  className="mb-1 txtfield">Email</Form.Label>
             <Form.Group className="mb-1" controlId="formBasicEmail">
               <Form.Control autoFocus required
                 type="email"
@@ -35,7 +35,7 @@ const Login = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </Form.Group>
-            <Form.Label className="mb-1">Password</Form.Label>
+            <Form.Label className="mb-1 txtfield">Password</Form.Label>
             <Form.Group className="mb-4" controlId="formBasicPassword">
               <Form.Control
                 type="password" required
@@ -45,8 +45,8 @@ const Login = () => {
             </Form.Group>
 
             <div className="d-grid mt-2">
-              <Button variant="primary" type="Submit">
-                Log In
+              <Button variant="primary" type="Submit" className="txtfield">
+                Login
               </Button>
             </div>
           </div>
