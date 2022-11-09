@@ -12,7 +12,13 @@ export default function Navbar1() {
             <Navbar sticky="top" expand="lg" bg="light">
                 <Container fluid>
                     <Navbar.Brand>
-                        <p className='logo' style={{ cursor: 'default',color:'black'}}>KEC Official</p></Navbar.Brand>
+                    <img style={{cursor:'default',marginLeft:'30%'}}
+              src="https://letusstudy.in/storage/colleges/logo-131220190616.jpg"
+              width="60"
+              height="80"
+              className=" align-center"
+              alt="React Bootstrap logo"/>
+                    </Navbar.Brand>
                     <Navbar.Toggle style={{ backgroundColor: 'white' }} aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
