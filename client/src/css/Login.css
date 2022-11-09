@@ -29,6 +29,7 @@
     font-size: 24px;
     color: rgb(0, 0, 0);
     font-weight: 800;
+    font-family: "roboto";
 }
 
 .d-grid.mt-2 {
@@ -36,4 +37,10 @@
 }
 .mb-1,.mb-4 {
     padding: 8px;
+}
+
+
+.txtfield
+{
+    font-family: "roboto";
 }
