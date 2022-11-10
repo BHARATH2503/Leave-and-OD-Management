@@ -4,6 +4,7 @@
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     letter-spacing: 3px;
     padding: 15px;
+    
 }
 .link
 {
@@ -26,21 +27,12 @@
 .Brand{
     text-decoration: none;
 }
-.logo{
-    text-decoration: none;
-    color:white;
-    font-weight: bolder;
-    margin-left:30px;
-    font-size:30px
-}
-a:hover{
-    color: white;
-}
 
 
 
 
-link
+
+#navcolor
 {
-    font-family: "Roboto";
+    background-image: linear-gradient(to right, #b3ffae, #d4f9b3, #eaf4bf, #f5f1d2, #f5f1e8);
 }

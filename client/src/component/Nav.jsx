@@ -8,15 +8,16 @@ import '../css/App.css';
 import "../css/Nav.css";
 import logo from "../images/logo-1.jpg";
 
+
 export default function Navbar1() {
     return (
         <>
-            <Navbar expand="lg" className="Navbar">
+            <Navbar expand="lg" className="Navbar" id="navcolor">
                 <Container fluid>
                     <Navbar.Brand>
                     <img src={logo} style={{marginLeft:'15px'}}  width="60" height="70" alt="KEC logo"/>
                     </Navbar.Brand>
-                    <Navbar.Toggle style={{ backgroundColor: 'white' }} aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Link className="link" to="/">Home</Link>
