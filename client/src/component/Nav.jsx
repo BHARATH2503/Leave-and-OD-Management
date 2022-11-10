@@ -6,12 +6,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../css/App.css';
 import "../css/Nav.css";
-import logo from "./images/logo-1.jpg";
+import logo from "../images/logo-1.jpg";
 
 export default function Navbar1() {
     return (
         <>
-            <Navbar sticky="top" expand="lg" className="Navbar">
+            <Navbar expand="lg" className="Navbar">
                 <Container fluid>
                     <Navbar.Brand>
                     <img src={logo} style={{marginLeft:'15px'}}  width="60" height="70" alt="KEC logo"/>
