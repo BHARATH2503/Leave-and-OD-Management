@@ -19,6 +19,9 @@
 }
 .link:hover{
     color: black;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .Brand{
     text-decoration: none;
@@ -33,9 +36,10 @@
 a:hover{
     color: white;
 }
-.Navbar{
-    box-shadow: 5px 0px 10px 0px  black;
-}
+
+
+
+
 link
 {
     font-family: "Roboto";
