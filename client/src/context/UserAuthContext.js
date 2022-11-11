@@ -6,7 +6,7 @@ import {
   signOut,
   
 } from "firebase/auth";
-import { auth } from "../firebase";
+import { auth } from "../component/firebase";
 const userAuthContext = createContext();
 export function UserAuthContextProvider({ children }) {
   const [user, setUser] = useState({});

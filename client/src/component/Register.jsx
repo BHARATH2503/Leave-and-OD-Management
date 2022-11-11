@@ -1,18 +1,18 @@
 import React from "react";
-import { useUserAuth } from "./context/UserAuthContext";
+import { useUserAuth } from "../context/UserAuthContext";
 import Registerform from "./Registerform";
+import '../css/Registerform.css';
 
-export const Register = () => {
+function Register() 
+{
   const { user } = useUserAuth();
 
   
   return (
     <>
-      <div className="p-4 box mt-2 ">
-        Hello Welcome <br />
-        {user && user.email}
-      </div>
-      <div>
+      <div className="mt-2">
+       <h5 > Hello Welcome <br />
+        {user && user.email}</h5 >
         <Registerform/>
        
       </div>
