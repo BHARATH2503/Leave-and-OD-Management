@@ -12,7 +12,7 @@ function Navbar1() {
    
     return (
         <>
-            <Navbar sticky="top" expand="lg" className="Navbar" id="navcolor">
+            <Navbar expand="lg" className="Navbar" id="navcolor">
                 <Container fluid>
                     <Navbar.Brand>
                     <img src={logo} style={{marginLeft:'15px'}}  width="60" height="70" alt="KEC logo"/>
@@ -22,10 +22,9 @@ function Navbar1() {
                         <Nav className="me-auto">
                             <Link className="link" to="/">Home</Link>
                             <Link className="link" to="/register">Register</Link>
-                            <Link className="link" to="/about">About</Link>
+                            <Link className="link" to="/contact">Contact</Link>
                             <Link className="link" to="/login">Login</Link>
                         </Nav>
-                       
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
