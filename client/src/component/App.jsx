@@ -5,11 +5,11 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Routes, Route } from 'react-router-dom';
 import Nav from './Nav';
 import Home from './Home';
-import About from './About';
 import Login from './Login';
 import Register from './Register'
 // import ProtectedRoute from "./ProtectedRoute";
 import { UserAuthContextProvider } from "../context/UserAuthContext"
+import View from './View';
 function App() {
   return (
     <Router>
@@ -18,8 +18,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/register' element={<Register/>}/>
-          <Route path='/about' element={<About/>} />
           <Route path='/login' element={<Login />}/>
+          <Route path='/view' element={<View/>}/>
         </Routes>
       </UserAuthContextProvider>
     </Router>

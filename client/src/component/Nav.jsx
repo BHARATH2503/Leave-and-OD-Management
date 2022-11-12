@@ -22,8 +22,9 @@ function Navbar1() {
                         <Nav className="me-auto">
                             <Link className="link" to="/">Home</Link>
                             <Link className="link" to="/register">Register</Link>
-                            <Link className="link" to="/contact">Contact</Link>
+                            <Link className="link" to="/view">View</Link>
                             <Link className="link" to="/login">Login</Link>
+                            
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

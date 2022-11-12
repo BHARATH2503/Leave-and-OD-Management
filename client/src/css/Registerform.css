@@ -1,15 +1,18 @@
 .button{
     margin-left: 10px;
     margin-top: 10px;
+    
 }
 .container{
-    width: 50%;
-    box-shadow: rgba(0, 0, 0, 0.16) 1px 1px 10px;
+    width: 60%;
+    box-shadow:#C3FF99 0px 0px 3px 3px;
     padding-bottom:20px;
     border-radius: 20px;
 }
 .page{
     height: 100vh;
+    margin-bottom: 10%;
+    margin-top: 3%;
 }
 .Auth-form-title {
     text-align: center;
@@ -22,10 +25,12 @@
 }
 .content{
     padding: 20px;
+   
 }
 Form{
     font-weight: bolder;
     font-size: large;
+    flex-direction: column;
 }
 h5{
    color: #BCE29E;

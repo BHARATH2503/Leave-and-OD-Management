@@ -34,7 +34,7 @@ function Registerform()
         
         <Form.Group className="mb-3" controlId="formBasicText">
           <Form.Label>Department</Form.Label>
-          <Select
+          <Select className="letter"
                   options={option}
                   placeholder="Select Department"
                   value={selectedOptions}
@@ -45,28 +45,28 @@ function Registerform()
 
         <Form.Group className="mb-3" controlId="formBasicText">
           <Form.Label>Roll No</Form.Label>
-          <Form.Control type="text" placeholder="Enter Roll NO" />
+          <Form.Control type="text" className="letter" placeholder="Eg:20ITR001" />
         </Form.Group>
         
         <Form.Group className="mb-3" controlId="formBasicText">
           <Form.Label>Class and Section</Form.Label>
-          <Form.Control type="text" placeholder="Enter Class and Section" />
+          <Form.Control type="text" className="letter" placeholder="Enter Class and Section" />
         </Form.Group>
         <Form.Group>
 
         <Form.Label>Choose the option</Form.Label>
-          <Form.Check value="Leave" type='radio' name="purpose" label="Leave"/>
-          <Form.Check value="OD" type='radio' name="purpose" label="OD"/>
+          <Form.Check className="letter" value="Leave" type='radio' name="purpose" label="Leave"/>
+          <Form.Check className="letter" value="OD" type='radio' name="purpose" label="OD"/>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicDate">
           <Form.Label>Date</Form.Label>
-          <Form.Control type="date"/>
+          <Form.Control className="letter" type="date"/>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicText">
           <Form.Label>Period</Form.Label>
-          <Form.Control type="text" placeholder="Enter Period" />
+          <Form.Control type="text" className="letter" placeholder="Enter Period" />
         </Form.Group>
 
         <Form.Group>
