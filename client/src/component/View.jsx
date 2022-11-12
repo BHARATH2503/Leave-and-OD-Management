@@ -14,7 +14,7 @@ class View extends React.Component {
           <Form.Label>Enter Your Roll No</Form.Label>
           <Form.Control type="text" placeholder="Eg:20ITR001" autoFocus className="letter"/>
         </Form.Group>
-        <Button className="buttons" variant="success" type="button">Search</Button>
+        <Button className="buttons" variant="danger" type="button">SHOW</Button>
         </Form>
         </div>
         </div>
