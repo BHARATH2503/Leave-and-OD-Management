@@ -8,7 +8,7 @@ import Home from './Home';
 import About from './About';
 import Login from './Login';
 import Register from './Register'
-import ProtectedRoute from "./ProtectedRoute";
+// import ProtectedRoute from "./ProtectedRoute";
 import { UserAuthContextProvider } from "../context/UserAuthContext"
 function App() {
   return (
@@ -17,9 +17,9 @@ function App() {
       <UserAuthContextProvider>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/register' element={<ProtectedRoute><Register/></ProtectedRoute>}/>
+          <Route path='/register' element={<Register/>}/>
           <Route path='/about' element={<About/>} />
-          <Route path='/login' element={<Login />}></Route>
+          <Route path='/login' element={<Login />}/>
         </Routes>
       </UserAuthContextProvider>
     </Router>

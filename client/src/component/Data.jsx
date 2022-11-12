@@ -1,11 +1,11 @@
 const option=
 [
     {label:"IT",value:"Information Technology"},
-    {label:"Civil",value:"Civil"},
-    {label:"Mechanical",value:"Mechanical"},
-    {label:"Mechatronics",value:"Mechatronics"},
-    {label:"Automobile",value:"Automobile"},
-    {label:"Chemical",value:"Chemical"},
+    {label:"CIVIL",value:"Civil"},
+    {label:"MECH",value:"Mechanical"},
+    {label:"MTS",value:"Mechatronics"},
+    {label:"AUTO",value:"Automobile"},
+    {label:"CHEM",value:"Chemical"},
     {label:"FT",value:"Food Technology"},
     {label:"EEE",value:"Electrical and Electronics Engineering"},
     {label:"EIE",value:"Electronics and Instrumentation Engineering"},

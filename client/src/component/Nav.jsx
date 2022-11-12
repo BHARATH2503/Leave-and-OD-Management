@@ -7,11 +7,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import '../css/App.css';
 import "../css/Nav.css";
 import logo from "../images/logo-1.jpg";
-import { useUserAuth } from "../context/UserAuthContext";
-
 
 function Navbar1() {
-const  user  = useUserAuth();
    
     return (
         <>
@@ -27,7 +24,6 @@ const  user  = useUserAuth();
                             <Link className="link" to="/register">Register</Link>
                             <Link className="link" to="/about">About</Link>
                             <Link className="link" to="/login">Login</Link>
-                           <h4> {user && user.email}</h4>
                         </Nav>
                        
                     </Navbar.Collapse>

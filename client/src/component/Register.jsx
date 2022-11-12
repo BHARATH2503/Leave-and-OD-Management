@@ -11,7 +11,7 @@ function Register()
   return (
     <>
       <div className="mt-2">
-       <h5 > Hello Welcome <br />
+       <h5 >
         {user && user.email}</h5 >
         <Registerform/>
        
