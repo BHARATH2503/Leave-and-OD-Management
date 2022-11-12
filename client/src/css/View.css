@@ -1,11 +1,20 @@
 .view{
-    width: 50%;
     box-shadow:#C3FF99 0px 0px 3px 3px;
-    padding-bottom:15px;
-    border-radius: 20px;
+    width: 500px;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    border-radius: 30px;
 }
 .pages{
     margin-top:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+  
 }
 .Auth-form-title {
     text-align: center;
@@ -31,7 +40,7 @@
     text-transform: uppercase;
     color: black;
     font-weight: bold;
-    margin-top: 2%;
+    margin-top: 1%;
 
    
     
