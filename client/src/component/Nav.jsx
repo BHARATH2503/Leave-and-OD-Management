@@ -7,15 +7,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import '../css/App.css';
 import "../css/Nav.css";
 import logo from "../images/logo-1.jpg";
-import { useUserAuth } from "../context/UserAuthContext";
 
 
-function Navbar1() {
-const  user  = useUserAuth();
-   
+export default function Navbar1() {
     return (
         <>
-            <Navbar sticky="top" expand="lg" className="Navbar" id="navcolor">
+            <Navbar expand="lg" className="Navbar" id="navcolor">
                 <Container fluid>
                     <Navbar.Brand>
                     <img src={logo} style={{marginLeft:'15px'}}  width="60" height="70" alt="KEC logo"/>
@@ -25,15 +22,12 @@ const  user  = useUserAuth();
                         <Nav className="me-auto">
                             <Link className="link" to="/">Home</Link>
                             <Link className="link" to="/register">Register</Link>
-                            <Link className="link" to="/about">About</Link>
+                            <Link className="link" to="/contact">Contact</Link>
                             <Link className="link" to="/login">Login</Link>
-                           <h4> {user && user.email}</h4>
                         </Nav>
-                       
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
         </>
     );
 }
-export default Navbar1;
