@@ -30,7 +30,7 @@ function Navbar1() {
                     <Navbar expand="lg" className="Navbar" id="navcolor">
                 <Container fluid>
                     <Navbar.Brand>
-                    <img src={logo} style={{marginLeft:'15px'}}  width="60" height="70" alt="KEC logo"/>
+                    <img src={logo} style={{marginLeft:'15px'}}  width="60" height="60" alt="KEC logo"/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

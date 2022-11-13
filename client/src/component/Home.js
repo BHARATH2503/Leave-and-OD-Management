@@ -20,7 +20,7 @@ function Home() {
             <br></br>
             <br></br>
             <br></br>
-            <marquee><h3 style={{fontWeight:"600"}}>Hello ! welcome to Leave and On Duty Management System . If you want to see Leave and OD Details click on View . To enter Leave and OD details click on Entry . It is only applicable for Faculty .</h3></marquee>
+            <marquee><h3 style={{fontWeight:"600",fontSize:"130%"}}>Hello ! welcome to Leave and On Duty Management System . If you want to see Leave and OD Details click on View . To enter Leave and OD details click on Entry . It is only applicable for Faculty .</h3></marquee>
         </div>
         
     )
