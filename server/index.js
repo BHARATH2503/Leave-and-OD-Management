@@ -52,6 +52,17 @@ app.post("/view", async (req,res)=>{
     }
 })
 
+//delete
+
+app.post("/delete", async (req, res) => {
+    const Rno = req.body.Rollno;
+    const Date = req.body.Date;
+    const result = await Data.findOneAndDelete({ Rollno: Rno, Date: Date });
+    console.log(result);
+    console.log("deleted");
+    res.end();
+})
+
 //server
 app.listen(3001, () => {
     console.log("Server running...");

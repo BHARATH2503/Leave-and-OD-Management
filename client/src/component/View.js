@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 import Table from 'react-bootstrap/Table';
 import "../css/View.css";
 import Axois from "axios";
+import swal from 'sweetalert';
 
 function View()
  {
@@ -15,11 +16,14 @@ function View()
       {
         Rollno: Rollno,
       }).then((res) => {
+        swal(Rollno,"Wait a Second!","warning");
         const data = res.data
         setSearch(data)
         console.log(data);
+        
       });
   }
+  
   //table
   const searchdata = search.map((val, key) => {
     return (
@@ -38,15 +42,16 @@ function View()
         <th>Period</th>
       </tr></>
   const header =
-    
-      <Table bordered hover className="table">
-        <thead>
-          {head}
-        </thead>
-        <tbody>
-          {searchdata}
-        </tbody>
-      </Table>
+    <>
+    <h1 className="letter">{Rollno}</h1>
+    <Table bordered hover className="table">
+      <thead>
+        {head}
+      </thead>
+      <tbody>
+        {searchdata}
+      </tbody>
+    </Table></>
 
   return (
     <><div className="pages">
@@ -64,9 +69,10 @@ function View()
         </Form>
       </div>
     </div>
+   
     <div className="container page2">
         <h1>Leave and OD Details</h1>
-        <h1 className="letter">{Rollno}</h1>
+        
         {header}
       </div></>
 

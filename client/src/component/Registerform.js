@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Select from "react-select";
 import option from "./Data";
 import Axios from "axios";
+import swal from 'sweetalert';
 import "../css/Registerform.css";
 
 function Registerform() {
@@ -29,12 +30,13 @@ function Registerform() {
 
   //insert
   const Entry = () => {
-    try {
+        try {
       console.log("adasdsad")
       Axios.post("http://localhost:3001/add", {
         Department: Department, Section: Section, Regulation: Regulation, Rollno: Rollno, Date: Date, Period: Period, Option: Option,
-      }).then(() => {
-        alert("Inserted Succesfully")
+      }).then((res) => {
+        swal("Inserted !",Rollno, "success");
+        res.end();
       });
     }
     catch (err) {
@@ -42,7 +44,16 @@ function Registerform() {
     }
   }
 
+  //delete
+
+  const Delete = () => {
+    Axios.post("http://localhost:3001/delete", { Rollno: Rollno, Date: Date, }).then(() => {
+      swal("Deleted!",Rollno,"success");
+    })
+  }
+
   return (
+
     <div className="page">
       <div className="container">
         <h3 className="Auth-form-title">Leave and OD Details</h3>
@@ -110,6 +121,9 @@ function Registerform() {
           <Form.Group>
             <Button variant="primary" className="button" type="button" onClick={Entry}>
               Submit
+            </Button>
+            <Button variant="danger" className="button" type="button" onClick={Delete}>
+              Delete
             </Button>
           </Form.Group>
         </Form>
