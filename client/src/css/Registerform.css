@@ -21,7 +21,7 @@
     font-size: 24px;
     color: rgb(0, 0, 0);
     font-weight: 800;
-    font-family: "roboto";
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .content{
     padding: 20px;
@@ -31,10 +31,4 @@ Form{
     font-weight: bolder;
     font-size: large;
     flex-direction: column;
-}
-h5{
-   color: #BCE29E;
-   font-weight: bolder;
-   font-size:20px;
-    text-align: right;
 }

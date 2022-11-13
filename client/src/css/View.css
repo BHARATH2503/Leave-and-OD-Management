@@ -23,7 +23,7 @@
     font-size: 24px;
     color: rgb(0, 0, 0);
     font-weight: 800;
-    font-family: "roboto";
+    font-family: "Lato";
 }
 .buttons{
     margin-left: 38%;
@@ -39,9 +39,6 @@
 .letter{
     text-transform: uppercase;
     color: black;
-    font-weight: bold;
+    font-weight:600;
     margin-top: 1%;
-
-   
-    
 }

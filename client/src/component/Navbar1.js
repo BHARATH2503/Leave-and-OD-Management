@@ -1,5 +1,4 @@
 import React from "react";
-
 import {Outlet,Link} from 'react-router-dom';
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
@@ -19,7 +18,7 @@ function Navbar1() {
         await logOut();
         navigate("/");
       } catch (error) {
-        // console.log(error.message);
+        
       }
     };  
     console.log(user);  

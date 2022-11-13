@@ -24,7 +24,7 @@ const Login = () => {
     <>
       <div className="Auth-form-container">
         <Form onSubmit={handleSubmit} className="Auth-form">
-          <h4 className="Auth-form-title">ADMIN LOGIN</h4>
+          <h4 className="Auth-form-title">Login</h4>
           <div className="Auth-form-content">
             {error && <Alert variant="danger">{error}</Alert>}
             <Form.Label  className="mb-1 txtfield">Email</Form.Label>

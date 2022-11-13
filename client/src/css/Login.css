@@ -29,7 +29,7 @@
     font-size: 24px;
     color: rgb(0, 0, 0);
     font-weight: 800;
-   
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .d-grid.mt-2 {
@@ -42,5 +42,5 @@
 
 .txtfield
 {
-    font-family: "roboto";
-}
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;}
+    

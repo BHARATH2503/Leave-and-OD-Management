@@ -12,7 +12,7 @@ class View extends React.Component {
                 
         <Form.Group className="mb-3" controlId="formBasicText">
           <Form.Label>Enter Your Roll No</Form.Label>
-          <Form.Control type="text" placeholder="Eg:20ITR001" autoFocus className="letter"/>
+          <Form.Control type="text" placeholder="Ex : 20ITR001" autoFocus className="letter"/>
         </Form.Group>
         <Button className="buttons" variant="primary" type="button">SHOW</Button>
         </Form>
