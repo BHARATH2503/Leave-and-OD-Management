@@ -8,7 +8,7 @@
     border-radius: 30px;
 }
 .pages{
-    margin-top:10%;
+    margin-top:2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,4 +48,18 @@
     color: black;
     font-weight:600;
     margin-top: 1%;
+}
+.table{
+font-size: 20px;
+text-align: center;
+border: solid black;
+}
+h1{
+    text-align: center;
+    padding: 2%;
+}
+.page2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
 }

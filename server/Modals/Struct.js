@@ -1,29 +1,35 @@
 const mongoose = require("mongoose");
 
 const DataSchema = new mongoose.Schema({
-    Department:{
-        type:String,
-        required:true
+    Department: {
+        type: String,
+        required: true,
     },
-    Rollno:{
-        type:String,
-        required:true
+    Rollno: {
+        type: String,
+        required: true,
     },
-    Section:{
-        type:String
+    Section: {
+        type: String,
+        required: true,
     },
-    Regulation:{
-        type:Number
+    Regulation: {
+        type: Number,
+        required: true,
+
     },
-    Option:{
-        type:String
+    Option: {
+        type: String,
+        required: true,
     },
-    Date:{
-        type:String
+    Date: {
+        type: String,
+        required: true,
     },
-    Period:{
-        type:String
+    Period: {
+        type: String,
+        required: true,
     },
 })
-const Data = mongoose.model("Details",DataSchema);
-module.exports=Data;
+const Data = mongoose.model("Details", DataSchema);
+module.exports = Data;
