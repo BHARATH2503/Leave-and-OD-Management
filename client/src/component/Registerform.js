@@ -1,7 +1,6 @@
 import React,{useState} from "react";
 import { Button } from "react-bootstrap";
-import { useNavigate } from "react-router";
-import { useUserAuth } from "../context/UserAuthContext";
+
 import Form from 'react-bootstrap/Form';
 import Select from "react-select";
 import option from "./Data";
@@ -16,16 +15,16 @@ function Registerform()
     setSelectedOptions(data);
   }
   //logout
-  const { logOut } = useUserAuth();
-  const navigate = useNavigate();
-  const handleLogout = async () => {
-    try {
-      await logOut();
-      navigate("/");
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
+  // const { logOut } = useUserAuth();
+  // const navigate = useNavigate();
+  // const handleLogout = async () => {
+  //   try {
+  //     await logOut();
+  //     navigate("/");
+  //   } catch (error) {
+  //     console.log(error.message);
+  //   }
+  // };
     return(
       <div className="page">
       <div className="container">
@@ -73,9 +72,9 @@ function Registerform()
         <Button variant="primary" className="button" type="submit">
           Submit
         </Button>
-        <Button  variant="danger" className="button" onClick={handleLogout}>
+        {/* <Button  variant="danger" className="button" onClick={handleLogout}>
           Log out
-        </Button>
+        </Button> */}
         </Form.Group>
       </Form>
       </div>
