@@ -3,7 +3,7 @@ import logo2 from "../images/logo-2.jpg";
 import "../css/Home.css";
 function Home() {
     return (
-        <div>
+        <div style={{marginLeft:"1%"}}>
             <br></br>
             <img src={logo2} alt="photokec" width="55%" height="500em"/>
             <div className="centered cont">
