@@ -27,7 +27,7 @@ function Navbar1() {
             {
                 user == null?
                 (
-                    <Navbar expand="lg" className="Navbar" id="navcolor">
+                    <Navbar sticky="top" expand="lg" className="Navbar" id="navcolor">
                 <Container fluid>
                     <Navbar.Brand>
                     <img src={logo} style={{marginLeft:'15px'}}  width="60" height="60" alt="KEC logo"/>
@@ -46,7 +46,7 @@ function Navbar1() {
             </Navbar>
                 ):
                 (
-                    <Navbar expand="lg" className="Navbar" id="navcolor">
+                    <Navbar sticky="top" expand="lg" className="Navbar" id="navcolor">
                     <Container fluid>
                         <Navbar.Brand>
                         <img src={logo} style={{marginLeft:'15px'}}  width="60" height="70" alt="KEC logo"/>
