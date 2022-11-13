@@ -19,6 +19,24 @@ h2{
     color:cadetblue;
     text-decoration-color:gray;   
 }
-
+.marquee {
+    width: auto;
+	line-height:auto;
+    white-space: nowrap;
+    color: black;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+.marquee h3 {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+    font-size: 130%;
+    font-weight: 600;
+}
+@keyframes marquee {
+    0%   { transform: translate(100%,0); }
+    100% { transform: translate(-100%, 0); }
+}
 
 
