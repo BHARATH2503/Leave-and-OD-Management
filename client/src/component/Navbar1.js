@@ -1,5 +1,5 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
+
 import {Outlet,Link} from 'react-router-dom';
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
@@ -39,7 +39,7 @@ function Navbar1() {
                             <Link className="link" to="/">Home</Link>
                             <Link className="link" to="/register">Register</Link>
                             <Link className="link" to="/view">View</Link>
-                            <Button><Link className="link" to="/login">Login</Link></Button>
+                            <Link className="link" to="/login">Login</Link>
                             
                         </Nav>
                     </Navbar.Collapse>
@@ -58,7 +58,7 @@ function Navbar1() {
                                 <Link className="link" to="/">Home</Link>
                                 <Link className="link" to="/register">Register</Link>
                                 <Link className="link" to="/view">View</Link>
-                                <Button onClick={handleLogout}>Logout</Button>
+                                <Link className="link" onClick={handleLogout}>Logout</Link>
                                 
                             </Nav>
                         </Navbar.Collapse>
