@@ -13,6 +13,11 @@
     box-shadow: rgba(0, 0, 0, 0.16) 1px 1px 10px;
     padding-top: 1%;
     padding-bottom: 50px;
+    height: 450px;
+    box-shadow: cadetblue 1px 1px 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: -30px;
     border-radius: 30px;
    
 }
@@ -42,4 +47,4 @@
 .txtfield
 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;}
-    
+
