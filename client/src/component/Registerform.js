@@ -71,8 +71,12 @@ function Registerform()
         </Button>
         </Form.Group>
       </Form>
+      
       </div>
+      <br></br>
+      <br></br>
       </div>
+      
     );
 }
 export default Registerform;
