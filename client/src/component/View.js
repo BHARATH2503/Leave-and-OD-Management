@@ -11,10 +11,10 @@ class View extends React.Component {
               <Form className="content" autoComplete="off">
                 
         <Form.Group className="mb-3" controlId="formBasicText">
-          <Form.Label>Enter Your Roll No</Form.Label>
+          <Form.Label>Enter Roll No</Form.Label>
           <Form.Control type="text" placeholder="Ex : 20ITR001" autoFocus className="letter"/>
         </Form.Group>
-        <Button className="buttons" variant="primary" type="button">SHOW</Button>
+        <Button className="buttons" variant="primary" type="button" style={{letterSpacing:"3px",fontFamily:"Lato"}}>Show</Button>
         </Form>
         </div>
         </div>

@@ -22,7 +22,7 @@ function Registerform()
         
         <Form.Group className="mb-3" controlId="formBasicText">
           <Form.Label>Department</Form.Label>
-          <Select className="letter"
+          <Select className="letter1"
                   options={option}
                   placeholder="Select Department"
                   value={selectedOptions}
@@ -31,10 +31,6 @@ function Registerform()
                 />
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicText">
-          <Form.Label>Roll No</Form.Label>
-          <Form.Control type="text" className="letter" placeholder="Ex : 20ITR001" />
-        </Form.Group>
         
         <Form.Group className="mb-3" controlId="formBasicText">
           <Form.Label>Section</Form.Label>
@@ -44,6 +40,13 @@ function Registerform()
           <Form.Label>Regulation</Form.Label>
           <Form.Control type="number" className="letter" placeholder="Ex : 2020" />
         </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formBasicText">
+          <Form.Label>Roll No</Form.Label>
+          <Form.Control type="text" className="letter" placeholder="Ex : 20ITR001" />
+        </Form.Group>
+        
+
         <Form.Group className="mb-3">
         <Form.Label>Choose the option</Form.Label>
           <Form.Check className="letter" value="Leave" type='radio' name="purpose" label="Leave"/>
