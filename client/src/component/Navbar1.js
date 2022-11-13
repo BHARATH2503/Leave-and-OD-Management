@@ -36,7 +36,7 @@ function Navbar1() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Link className="link" to="/">Home</Link>
-                            <Link className="link" to="/register">Register</Link>
+                            <Link className="link" to="/register">Entry</Link>
                             <Link className="link" to="/view">View</Link>
                             <Link className="link" to="/login">Login</Link>
                             
@@ -55,7 +55,7 @@ function Navbar1() {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
                                 <Link className="link" to="/">Home</Link>
-                                <Link className="link" to="/register">Register</Link>
+                                <Link className="link" to="/register">Entry</Link>
                                 <Link className="link" to="/view">View</Link>
                                 <Link className="link" onClick={handleLogout}>Logout</Link>
                                 

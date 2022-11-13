@@ -1,0 +1,24 @@
+h2{
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.centered {
+    position: absolute;
+    top: 35%;
+  right:16%;
+  }
+
+.centered:hover
+{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.1);
+    text-decoration: underline;
+    color:cadetblue;
+    text-decoration-color:gray;   
+}
+
+
+
