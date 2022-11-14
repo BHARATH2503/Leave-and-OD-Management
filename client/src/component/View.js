@@ -43,7 +43,7 @@ function View()
       </tr></>
   const header =
     <>
-    <h1 className="letter">{Rollno}</h1>
+    <h6 className="letter">Roll No :  {Rollno}</h6>
     <Table bordered hover className="table">
       <thead>
         {head}
