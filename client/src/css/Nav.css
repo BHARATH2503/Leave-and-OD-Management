@@ -8,8 +8,7 @@
 .link
 {
    display: flex;
-   text-align: center;
-    justify-content:center;
+    flex-direction: row;
     text-decoration: none;
     
     color:black;
