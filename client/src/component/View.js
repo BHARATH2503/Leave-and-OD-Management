@@ -12,16 +12,22 @@ function View()
   const [search, setSearch] = useState([]);
   //view
   const View = () => {
+    try{
+    swal(Rollno,"Wait a Second!","warning");
     Axois.post("http://localhost:3001/view",
       {
         Rollno: Rollno,
       }).then((res) => {
-        swal(Rollno,"Wait a Second!","warning");
         const data = res.data
         setSearch(data)
         console.log(data);
         
       });
+    }
+    catch(err)
+    {
+      console.log(err);
+    }
   }
   
   //table

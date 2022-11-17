@@ -1,49 +1,57 @@
-.me-auto{
-    font-size:20px;
+.me-auto {
+    font-size: 20px;
     font-weight: bold;
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 3px;
-    margin-left:-3%;
+    margin-left: -3%;
 }
-.ms-auto{
-    font-size:20px;
+
+.ms-auto {
+    font-size: 20px;
     font-weight: bold;
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 3px;
-    
+
 }
-.login
-{
-   display: flex;
+
+.login {
+    display: flex;
     text-decoration: none;
-    color:black;
-    margin-left:720px ;
-    margin-right: 350px;
+    color: black;
+    margin-left: 155%;
+    margin-right: 490px;
     font-size: larger;
 }
-.link
-{
-  
+
+.link {
     text-decoration: none;
-    
-    color:black;
-    padding-left:5px;
-    margin-left:10% ;
+    color: black;
+    padding-left: 5px;
+    margin-left: 15%;
+    margin-right: -4%;
     font-size: larger;
 }
-.login:hover,.link:hover{
+
+.btn,
+.btn-success,
+.btn-danger {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.link:hover {
     color: white;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
-.Brand{
+
+.Brand {
     text-decoration: none;
 }
 
 
 
-#navcolor
-{
-    background-color:cadetblue;
+#navcolor {
+    background-color: cadetblue;
 }

@@ -1,5 +1,5 @@
-h2{
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+h2 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 900;
     letter-spacing: 3px;
 }
@@ -7,36 +7,41 @@ h2{
 .centered {
     position: absolute;
     top: 35%;
-  right:16%;
-  }
+    right: 16%;
+}
 
-.centered:hover
-{
+.centered:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.1);
     text-decoration: underline;
-    color:cadetblue;
-    text-decoration-color:gray;   
+    color: cadetblue;
+    text-decoration-color: gray;
 }
+
 .marquee {
     width: auto;
-	line-height:auto;
+    line-height: auto;
     white-space: nowrap;
     color: black;
     overflow: hidden;
     box-sizing: border-box;
-    
+
 }
+
 .marquee h3 {
     display: inline-block;
-    animation: marquee 20s linear infinite;
+    animation: marquee 30s linear infinite;
     font-size: 130%;
     font-weight: 600;
 }
+
 @keyframes marquee {
-    0%   { transform: translate(100%,0); }
-    100% { transform: translate(-100%, 0); }
+    0% {
+        transform: translate(100%, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
 }
-
-

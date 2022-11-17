@@ -30,12 +30,11 @@ function Registerform() {
 
   //insert
   const Entry = () => {
-        try {
-      console.log("adasdsad")
+    try {
       Axios.post("http://localhost:3001/add", {
         Department: Department, Section: Section, Regulation: Regulation, Rollno: Rollno, Date: Date, Period: Period, Option: Option,
       }).then((res) => {
-        swal("Inserted !",Rollno, "success");
+        swal("Inserted", Rollno, "success");
         res.end();
       });
     }
@@ -47,9 +46,15 @@ function Registerform() {
   //delete
 
   const Delete = () => {
-    Axios.post("http://localhost:3001/delete", { Rollno: Rollno, Date: Date, }).then(() => {
-      swal("Deleted!",Rollno,"success");
-    })
+    try {
+      Axios.post("http://localhost:3001/delete", { Rollno: Rollno, Date: Date, }).then(() => {
+        swal("Deleted!", Rollno, "success");
+      })
+    }
+    catch (err) {
+      console.log(err);
+    }
+
   }
 
   return (
