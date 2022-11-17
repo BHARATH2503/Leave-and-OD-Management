@@ -13,12 +13,7 @@ const DataSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    Regulation: {
-        type: Number,
-        required: true,
-
-    },
-    Option: {
+    Purpose: {
         type: String,
         required: true,
     },

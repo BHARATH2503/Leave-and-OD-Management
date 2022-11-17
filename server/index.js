@@ -17,12 +17,11 @@ app.post("/add", async (req, res) => {
     const Dep = req.body.Department;
     const Rno = req.body.Rollno;
     const Sec = req.body.Section;
-    const Reg = req.body.Regulation;
-    const Purp = req.body.Option;
+    const Purp = req.body.Purpose;
     const Date = req.body.Date;
     const Per = req.body.Period;
 
-    const details = new Data({ Department: Dep.value, Rollno: Rno, Section: Sec, Regulation: Reg, Option: Purp, Date: Date, Period: Per });
+    const details = new Data({ Department: Dep.value, Rollno: Rno, Section: Sec, Purpose: Purp, Date: Date, Period: Per });
 
     try {
         await details.save();
@@ -37,17 +36,15 @@ app.post("/add", async (req, res) => {
 
 //view
 
-app.post("/view", async (req,res)=>{
+app.post("/view", async (req, res) => {
     const Rno = req.body.Rollno
-    try
-    {
-        const details = await Data.find({Rollno:Rno});
+    try {
+        const details = await Data.find({ Rollno: Rno });
         res.json(details);
         console.log(details);
         res.end()
     }
-    catch(err)
-    {
+    catch (err) {
         console.log(err);
     }
 })
@@ -60,6 +57,20 @@ app.post("/delete", async (req, res) => {
     const result = await Data.findOneAndDelete({ Rollno: Rno, Date: Date });
     console.log(result);
     console.log("deleted");
+    res.end();
+})
+
+//update
+
+app.put("/update", async (req, res) => {
+    const Rno = req.body.Rollno;
+    const Date = req.body.Date;
+    const Per = req.body.Period;
+    const Purp = req.body.Purpose;
+
+    const result = await Data.findOneAndUpdate({ Rollno: Rno, Date: Date, Period: Per, Purpose: Purp });
+    console.log(result);
+    console.log("Updated");
     res.end();
 })
 

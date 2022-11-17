@@ -15,8 +15,6 @@ function Registerform() {
   }
   //section
   const [Section, setSection] = useState("");
-  //regulation
-  const [Regulation, setRegulation] = useState(0);
   //rollno
   const [Rollno, setRollno] = useState("")
   //date
@@ -24,7 +22,7 @@ function Registerform() {
   //period
   const [Period, setPeriod] = useState("");
   //option
-  const [Option, setOption] = useState("");
+  const [Purpose, setPurpose] = useState("");
 
 
 
@@ -32,7 +30,7 @@ function Registerform() {
   const Entry = () => {
     try {
       Axios.post("http://localhost:3001/add", {
-        Department: Department, Section: Section, Regulation: Regulation, Rollno: Rollno, Date: Date, Period: Period, Option: Option,
+        Department: Department, Section: Section, Rollno: Rollno, Date: Date, Period: Period, Purpose: Purpose,
       }).then((res) => {
         swal("Inserted", Rollno, "success");
         res.end();
@@ -43,25 +41,15 @@ function Registerform() {
     }
   }
 
-  //delete
+ 
 
-  const Delete = () => {
-    try {
-      Axios.post("http://localhost:3001/delete", { Rollno: Rollno, Date: Date, }).then(() => {
-        swal("Deleted!", Rollno, "success");
-      })
-    }
-    catch (err) {
-      console.log(err);
-    }
-
-  }
-
+  
   return (
 
     <div className="page">
       <div className="container">
         <h3 className="Auth-form-title">Leave and OD Details</h3>
+        <center> <p>📌  Enter Rollno and Section in Upper Case  📌</p></center>
         <Form className="content" autoComplete="off">
 
           <Form.Group className="mb-3" controlId="formBasicText">
@@ -82,13 +70,7 @@ function Registerform() {
               setSection(e.target.value)
             }} />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicNumber">
-            <Form.Label>Regulation</Form.Label>
-            <Form.Control type="number" className="letter" placeholder="Ex : 2020" onChange={(e) => {
-              setRegulation(e.target.value)
-            }} />
-          </Form.Group>
-
+         
           <Form.Group className="mb-3" controlId="formBasicText">
             <Form.Label>Roll No</Form.Label>
             <Form.Control type="text" className="letter" placeholder="Ex : 20ITR001" onChange={(e) => {
@@ -100,10 +82,10 @@ function Registerform() {
           <Form.Group className="mb-3">
             <Form.Label>Choose the option</Form.Label>
             <Form.Check className="letter" value="Leave" type='radio' name="purpose" label="Leave" onChange={(e) => {
-              setOption(e.target.value)
+              setPurpose(e.target.value)
             }} />
             <Form.Check className="letter" value="OD" type='radio' name="purpose" label="OD" onChange={(e) => {
-              setOption(e.target.value)
+              setPurpose(e.target.value)
             }} />
           </Form.Group>
 
@@ -118,7 +100,7 @@ function Registerform() {
 
           <Form.Group className="mb-3" controlId="formBasicText">
             <Form.Label>Period</Form.Label>
-            <Form.Control type="text" className="letter" placeholder="Ex : 1 - 8  OR  2 - 4  OR  5" onChange={(e) => {
+            <Form.Control type="text" className="letter" placeholder="Ex : 1-8  or  2-4  or  5" onChange={(e) => {
               setPeriod(e.target.value)
             }} />
           </Form.Group>
@@ -127,9 +109,7 @@ function Registerform() {
             <Button variant="primary" className="button" type="button" onClick={Entry}>
               Submit
             </Button>
-            <Button variant="danger" className="button" type="button" onClick={Delete}>
-              Delete
-            </Button>
+            
           </Form.Group>
         </Form>
       </div>

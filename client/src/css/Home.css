@@ -31,7 +31,7 @@ h2 {
 
 .marquee h3 {
     display: inline-block;
-    animation: marquee 30s linear infinite;
+    animation: marquee 35s linear infinite;
     font-size: 130%;
     font-weight: 600;
 }

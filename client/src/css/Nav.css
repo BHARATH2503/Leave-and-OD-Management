@@ -22,6 +22,14 @@
     margin-right: 490px;
     font-size: larger;
 }
+.logout {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    margin-left:85%;
+    margin-right:400px;
+    font-size: larger;
+}
 
 .link {
     text-decoration: none;

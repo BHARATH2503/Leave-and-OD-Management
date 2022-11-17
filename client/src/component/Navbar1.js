@@ -59,7 +59,9 @@ function Navbar1() {
                                         <Link className="link" to="/">Home</Link>
                                         <Link className="link" to="/register">Entry</Link>
                                         <Link className="link" to="/view">View</Link>
-                                        <div className="ms-auto"><Link className="login" onClick={handleLogout}><Button className="btn btn-danger">Logout</Button></Link></div>
+                                        <Link className="link" to="/update">Update</Link>
+                                        <Link className="link" to="/delete">Delete</Link>
+                                        <div className="ms-auto"><Link className="logout" onClick={handleLogout}><Button className="btn btn-danger">Logout</Button></Link></div>
 
 
 

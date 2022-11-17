@@ -35,7 +35,7 @@ function View()
     return (
       <tr key={key}>
         <td>{val.Date}</td>
-        <td>{val.Option}</td>
+        <td>{val.Purpose}</td>
         <td>{val.Period}</td>
       </tr>
     )

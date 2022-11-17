@@ -14,6 +14,8 @@ import Registerform from './Registerform'
 import ProtectedRoute from "./ProtectedRoute";
 import { UserAuthContextProvider } from "../context/UserAuthContext"
 import View from './View';
+import Update from './Update';
+import Delete from './Delete';
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +26,8 @@ function App() {
       <Route path="/register" element={<ProtectedRoute><Registerform/></ProtectedRoute>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/view' element={<View/>}/>
+      <Route path='/update' element={<ProtectedRoute><Update/></ProtectedRoute>}/>
+      <Route path='/delete' element={<ProtectedRoute><Delete/></ProtectedRoute>}/>
       </Route>
     </Routes>
     </UserAuthContextProvider>
