@@ -10,25 +10,22 @@ function View()
  {
   const [Rollno, setRollno] = useState("");
   const [search, setSearch] = useState([]);
+  const [svi,setView]=useState("");
   //view
-  const View = () => {
-    try{
-    swal(Rollno,"Wait a Second!","warning");
+  const View1 = () => {
     Axois.post("http://localhost:3001/view",
       {
         Rollno: Rollno,
       }).then((res) => {
+        swal(Rollno,"Wait a Second!","warning");
         const data = res.data
-        setSearch(data)
+        setSearch(data);
+        setView(data.Rollno);
+        console.log(data.Rollno);
         console.log(data);
         
       });
-    }
-    catch(err)
-    {
-      console.log(err);
-    }
-  }
+  } 
   
   //table
   const searchdata = search.map((val, key) => {
@@ -49,7 +46,7 @@ function View()
       </tr></>
   const header =
     <>
-    <h6 className="letter">Roll No :  {Rollno}</h6>
+    <h6 className="letter">Roll No : {Rollno}</h6>
     <Table bordered hover className="table">
       <thead>
         {head}
@@ -71,16 +68,26 @@ function View()
               setRollno(e.target.value);
             } } />
           </Form.Group>
-          <Button type="button" className="buttons" variant="primary" onClick={View} style={{ letterSpacing: "3px", fontFamily: "Lato" }} >Show</Button>
+          <Button type="button" className="buttons" variant="primary" onClick={View1} style={{ letterSpacing: "3px", fontFamily: "Lato" }} >Show</Button>
         </Form>
       </div>
     </div>
    
-    <div className="container page2">
-        <h1>Leave and OD Details</h1>
+    {
+      svi != null?
+      (
+        <></>
+      ):
+      (
         
+        <div className="container page2">
+        <h4>Leave and OD Details</h4>  
         {header}
-      </div></>
+      </div>
+      )
+    }
+    
+    </>
 
    
 
