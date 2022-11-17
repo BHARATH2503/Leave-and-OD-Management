@@ -8,6 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import '../css/App.css';
 import "../css/Nav.css";
 import logo from "../images/logo-1.jpg";
+import {Button} from "react-bootstrap"
 
 function Navbar1() {
    
@@ -38,7 +39,8 @@ function Navbar1() {
                             <Link className="link" to="/">Home</Link>
                             <Link className="link" to="/register">Entry</Link>
                             <Link className="link" to="/view">View</Link>
-                            <Link className="link" to="/login">Login</Link>
+                            <div className="ms-auto"> <Link className="login" to="/login"><Button className="btn btn-success">Login</Button></Link></div>
+                           
                             
                         </Nav>
                     </Navbar.Collapse>
@@ -57,7 +59,9 @@ function Navbar1() {
                                 <Link className="link" to="/">Home</Link>
                                 <Link className="link" to="/register">Entry</Link>
                                 <Link className="link" to="/view">View</Link>
-                                <Link className="link" onClick={handleLogout}>Logout</Link>
+                                <div className="ms-auto"><Link className="login" onClick={handleLogout}><Button className="btn btn-danger">Logout</Button></Link></div>
+
+                                
                                 
                             </Nav>
                         </Navbar.Collapse>
