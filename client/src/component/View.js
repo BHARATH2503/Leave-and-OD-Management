@@ -28,7 +28,6 @@ function View()
         
       });
   } 
-  
   //table
   const searchdata = search.map((val, key) => {
     return (
@@ -81,7 +80,7 @@ function View()
         <></>
       ):
       (
-        
+
         <div className="container page2">
         <h4>Leave and OD Details</h4>  
         {header}
