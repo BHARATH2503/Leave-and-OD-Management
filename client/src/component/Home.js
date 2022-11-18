@@ -24,7 +24,7 @@ function Home() {
             <br></br>
 
             <div className="marquee">
-            <h3>Hello ! welcome to Leave and On Duty Management System . If you want to see Leave and OD Details click on View . To enter Leave and OD details click on Entry . It is only applicable for Faculty .</h3>
+            <h3>Hello ! welcome to Leave and On Duty Management System . If you want to see Leave and OD Details click on View . To enter or delete or update Leave and OD details , you must login . It is only applicable for Faculty .</h3>
             </div>
 
         </div>
