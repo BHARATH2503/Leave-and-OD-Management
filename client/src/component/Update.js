@@ -31,7 +31,7 @@ export default function Update() {
 
 
     return (
-        <div className="page">
+        <div className="pageupd">
             <div className="container">
                 <h3 className="Auth-form-title">Update the Leave and OD Details</h3>
                 <Form className="content" autoComplete="off">
@@ -68,7 +68,7 @@ export default function Update() {
                     </Form.Group>
 
                     <Form.Group>
-                        <Button variant="success" className="button" type="button" onClick={Update}>
+                        <Button variant="success" className="buttondel" type="button" onClick={Update}>
                             Update
                         </Button>
                     </Form.Group>

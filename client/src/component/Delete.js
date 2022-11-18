@@ -26,7 +26,7 @@ export default function Delete() {
     }
 
     return (
-        <div className="page">
+        <div className="page1">
             <div className="container">
                 <h3 className="Auth-form-title">Delete the Leave and OD Details</h3>
                 <Form className="content" autoComplete="off">
@@ -45,7 +45,7 @@ export default function Delete() {
                         }} />
                     </Form.Group>
                     <Form.Group>
-                        <Button variant="danger" className="button" type="button" onClick={Delete}>
+                        <Button variant="danger" className="buttondel" type="button" onClick={Delete}>
                             Delete
                         </Button>
                     </Form.Group>

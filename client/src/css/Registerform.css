@@ -1,5 +1,5 @@
 .button{
-    margin-left: 10px;
+    margin-left: 45%;
     margin-top: 10px;
     
 }
@@ -31,4 +31,27 @@ Form{
     font-weight: bolder;
     font-size: large;
     flex-direction: column;
+}
+
+
+.page1{
+    height: 50vh;
+  margin-left: 20%;
+    margin-top: 8%;
+    margin-right: 20%;
+}
+
+.buttondel{
+    margin-left: 40%;
+    margin-top: 10px;
+    
+}
+
+.pageupd
+{   
+    height: 50vh;
+    margin-left: 20%;
+    margin-top: 3%;
+    margin-right: 20%;
+    
 }
