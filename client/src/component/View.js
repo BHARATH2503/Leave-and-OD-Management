@@ -8,16 +8,18 @@ import swal from 'sweetalert';
 
 function View()
  {
+  
   const [Rollno, setRollno] = useState("");
   const [search, setSearch] = useState([]);
   const [svi,setView]=useState("");
   //view
   const View1 = () => {
+  swal(Rollno,"Wait a Second!","warning");
     Axois.post("http://localhost:3001/view",
       {
         Rollno: Rollno,
       }).then((res) => {
-        swal(Rollno,"Wait a Second!","warning");
+        
         const data = res.data
         setSearch(data);
         setView(data.Rollno);
