@@ -5,7 +5,7 @@ import "../css/Home.css";
 
 function Home() {
     return (
-        <div style={{ marginLeft: "1%" }}>
+        <div style={{ marginLeft: "2%" }}>
             <br></br>
             <img src={logo2} alt="photokec" width="55%" height="500em" />
             <div className="centered cont">
