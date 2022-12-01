@@ -35,6 +35,7 @@ function View()
         <td>{val.Date}</td>
         <td>{val.Purpose}</td>
         <td>{val.Period}</td>
+        <td>{val.Reason}</td>
       </tr>
     )
   });
@@ -44,6 +45,7 @@ function View()
         <th>Date</th>
         <th>Purpose</th>
         <th>Period</th>
+        <th>Reason</th>
       </tr></>
   const header =
     <>
@@ -67,7 +69,7 @@ function View()
             <Form.Label>Enter Roll No</Form.Label>
             <Form.Control type="text" placeholder="Ex : 20ITR001" autoFocus className="letter" onChange={(e) => {
               setRollno(e.target.value);
-            } } />
+            } } required />
           </Form.Group>
           <Button type="button" className="buttons" variant="primary" onClick={View1} style={{ letterSpacing: "3px", fontFamily: "Lato" }} >Show</Button>
         </Form>

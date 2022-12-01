@@ -25,6 +25,10 @@ const DataSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    Reason : {
+        type: String,
+        required: true
+    },
 })
 const Data = mongoose.model("Details", DataSchema);
 module.exports = Data;

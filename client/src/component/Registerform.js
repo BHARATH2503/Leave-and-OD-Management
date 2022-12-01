@@ -21,16 +21,17 @@ function Registerform() {
   const [Date, setDate] = useState("");
   //period
   const [Period, setPeriod] = useState("");
-  //option
+  //purpose
   const [Purpose, setPurpose] = useState("");
-
+  //reasson
+  const [Reason, setReason] = useState("");
 
 
   //insert
   const Entry = () => {
     try {
       Axios.post("http://localhost:3001/add", {
-        Department: Department, Section: Section, Rollno: Rollno, Date: Date, Period: Period, Purpose: Purpose,
+        Department: Department, Section: Section, Rollno: Rollno, Date: Date, Period: Period, Purpose: Purpose,Reason:Reason,
       }).then((res) => {
         swal("Inserted", Rollno, "success");
         res.end();
@@ -38,6 +39,7 @@ function Registerform() {
     }
     catch (err) {
       console.log(err);
+      swal("Fill the Details","", "error");
     }
   }
 
@@ -60,20 +62,21 @@ function Registerform() {
               value={Department}
               onChange={handleSelect}
               isSearchable={true}
+              required
             />
           </Form.Group>
 
 
           <Form.Group className="mb-3" controlId="formBasicText">
             <Form.Label>Section</Form.Label>
-            <Form.Control type="text" className="letter" placeholder="Ex : A" onChange={(e) => {
+            <Form.Control type="text" className="letter" required placeholder="Ex : A" onChange={(e) => {
               setSection(e.target.value)
             }} />
           </Form.Group>
          
           <Form.Group className="mb-3" controlId="formBasicText">
             <Form.Label>Roll No</Form.Label>
-            <Form.Control type="text" className="letter" placeholder="Ex : 20ITR001" onChange={(e) => {
+            <Form.Control type="text" className="letter" required placeholder="Ex : 20ITR001" onChange={(e) => {
               setRollno(e.target.value)
             }} />
           </Form.Group>
@@ -81,10 +84,10 @@ function Registerform() {
 
           <Form.Group className="mb-3">
             <Form.Label>Choose the option</Form.Label>
-            <Form.Check className="letter" value="Leave" type='radio' name="purpose" label="Leave" onChange={(e) => {
+            <Form.Check className="letter" value="Leave" required type='radio' name="purpose" label="Leave" onChange={(e) => {
               setPurpose(e.target.value)
             }} />
-            <Form.Check className="letter" value="OD" type='radio' name="purpose" label="OD" onChange={(e) => {
+            <Form.Check className="letter" value="OD" required type='radio' name="purpose" label="OD" onChange={(e) => {
               setPurpose(e.target.value)
             }} />
           </Form.Group>
@@ -93,15 +96,22 @@ function Registerform() {
 
           <Form.Group className="mb-3" controlId="formBasicDate">
             <Form.Label>Date</Form.Label>
-            <Form.Control className="letter" type="date" onChange={(e) => {
+            <Form.Control className="letter" required type="date" onChange={(e) => {
               setDate(e.target.value)
             }} />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicText">
             <Form.Label>Period</Form.Label>
-            <Form.Control type="text" className="letter" placeholder="Ex : 1-8  or  2-4  or  5" onChange={(e) => {
+            <Form.Control type="text" className="letter" required placeholder="Ex : 1-8  or  2-4  or  5" onChange={(e) => {
               setPeriod(e.target.value)
+            }} />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicText">
+            <Form.Label>Reason</Form.Label>
+            <Form.Control type="text" className="letter" required placeholder="Ex : Workshop or Fewer" onChange={(e) => {
+              setReason(e.target.value)
             }} />
           </Form.Group>
 

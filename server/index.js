@@ -20,8 +20,9 @@ app.post("/add", async (req, res) => {
     const Purp = req.body.Purpose;
     const Date = req.body.Date;
     const Per = req.body.Period;
+    const Reason = req.body.Reason;
 
-    const details = new Data({ Department: Dep.value, Rollno: Rno, Section: Sec, Purpose: Purp, Date: Date, Period: Per });
+    const details = new Data({ Department: Dep.value, Rollno: Rno, Section: Sec, Purpose: Purp, Date: Date, Period: Per, Reason: Reason });
 
     try {
         await details.save();
@@ -67,8 +68,9 @@ app.put("/update", async (req, res) => {
     const Date = req.body.Date;
     const Per = req.body.Period;
     const Purp = req.body.Purpose;
+    const Reason = req.body.Reason;
 
-    const result = await Data.findOneAndUpdate({ Rollno: Rno, Date: Date, Period: Per, Purpose: Purp });
+    const result = await Data.findOneAndUpdate({ Rollno: Rno, Date: Date},{$set: {Period: Per, Purpose: Purp, Reason:Reason,}});
     console.log(result);
     console.log("Updated");
     res.end();

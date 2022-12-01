@@ -14,12 +14,14 @@ export default function Update() {
     const [Period, setPeriod] = useState("");
     //option
     const [Purpose, setPurpose] = useState("");
+     //reasson
+    const [Reason, setReason] = useState("");
 
     //update
 
   const Update = () => {
     try {
-      Axios.put("http://localhost:3001/update", { Rollno: Rollno, Date: Date, Purpose: Purpose, Period: Period }).then(()=>{
+      Axios.put("http://localhost:3001/update", { Rollno: Rollno, Date: Date, Purpose: Purpose, Period: Period,Reason:Reason }).then(()=>{
         swal("Updated!", Rollno, "success");
       })
     }
@@ -38,34 +40,41 @@ export default function Update() {
 
                     <Form.Group className="mb-3" controlId="formBasicText">
                         <Form.Label>Roll No</Form.Label>
-                        <Form.Control type="text" className="letter" placeholder="Ex : 20ITR001" onChange={(e) => {
+                        <Form.Control type="text" className="letter"  placeholder="Ex : 20ITR001" onChange={(e) => {
                             setRollno(e.target.value)
-                        }} />
+                        }} required/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicDate">
                         <Form.Label>Date</Form.Label>
-                        <Form.Control className="letter" type="date" onChange={(e) => {
+                        <Form.Control className="letter" type="date"  onChange={(e) => {
                             setDate(e.target.value)
-                        }} />
+                        }} required/>
                     </Form.Group>
 
                     <Form.Group className="mb-3">
                         <Form.Label>Choose the option</Form.Label>
                         <Form.Check className="letter" value="Leave" type='radio' name="purpose" label="Leave" onChange={(e) => {
                             setPurpose(e.target.value)
-                        }} />
+                        }}  required/>
                         <Form.Check className="letter" value="OD" type='radio' name="purpose" label="OD" onChange={(e) => {
                             setPurpose(e.target.value)
-                        }} />
+                        }} required />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicText">
                         <Form.Label>Period</Form.Label>
-                        <Form.Control type="text" className="letter" placeholder="Ex : 1-8  or  2-4  or  5" onChange={(e) => {
+                        <Form.Control type="text" className="letter"  placeholder="Ex : 1-8  or  2-4  or  5" onChange={(e) => {
                             setPeriod(e.target.value)
-                        }} />
+                        }} required/>
                     </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="formBasicText">
+            <Form.Label>Reason</Form.Label>
+            <Form.Control type="text" className="letter" required placeholder="Ex : Workshop or Fewer" onChange={(e) => {
+              setReason(e.target.value)
+            }} />
+          </Form.Group>
 
                     <Form.Group>
                         <Button variant="success" className="buttondel" type="button" onClick={Update}>
